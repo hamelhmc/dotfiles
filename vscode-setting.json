@@ -292,6 +292,7 @@
   "markdown.validate.ignoredLinks": [],
   "markdown.validate.referenceLinks.enabled": "error",
   "markdown.validate.unusedLinkDefinitions.enabled": "error",
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": true,
   // ----
   // JAVASCRIPT SETTINGS
   // ----
@@ -351,6 +352,7 @@
   "terminal.integrated.tabs.defaultColor": "terminal.ansiMagenta",
   "terminal.integrated.tabs.title": "${cwdFolder}${separator}${workspaceFolder}${separator}${process}${separator}${sequence}${separator}${task}${separator}${cwdFolder}",
   "terminal.integrated.wordSeparators": " ()[]{}',\"`─‘’",
+  "terminal.integrated.enableImages": true,
   // ----
   // AUDIO CUES SETTINGS
   // ----
@@ -369,6 +371,19 @@
   "audioCues.terminalCommandFailed": "off",
   "audioCues.terminalQuickFix": "off",
   "audioCues.volume": 0,
+  // ----
+  // EMMET SETTINGS
+  // ----
+  "emmet.syntaxProfiles": {
+    "jsx": {
+      "markup.attributes": {
+        "class*": "className"
+      },
+      "markup.valuePrefix": {
+        "class*": "myStyles"
+      }
+    }
+  },
   // ----
   // GIT SETTINGS
   // ----
@@ -432,13 +447,11 @@
     "markdown"
   ],
   "eslint.quiet": false,
-
   // ----
   // TYPESCRIPT SETTINGS
   // ----
   "intellicodeApiExamples.typescript.enabled": true,
   "vsintellicode.typescript.completionsEnabled": true,
-
   // ----
   // INDENT RAINBOW SETTINGS
   // ----
@@ -657,7 +670,9 @@
   // MERGE SETTINGS
   // ----
   "mergeEditor.diffAlgorithm": "advanced",
-
+  "diffEditor.experimental.useVersion2": true,
+  "diffEditor.experimental.collapseUnchangedRegions": true,
+  "diffEditor.experimental.showMoves": true,
   // ----
   // ANGULAR SETTINGS
   // ----
@@ -668,7 +683,6 @@
   "angular.log": "verbose",
   "angular.disableAutomaticNgcc": false,
   "angular.trace.server": "verbose",
-
   // ----
   // TODO-TREE SETTINGS
   // ----
@@ -700,7 +714,6 @@
       "background": "#ffffff00"
     }
   },
-
   // ----
   // CATPPUCCIN SETTINGS
   // ----
@@ -708,13 +721,11 @@
   "catppuccin.bracketMode": "neovim",
   "catppuccin.extraBordersEnabled": true,
   "catppuccin.workbenchMode": "flat",
-
   // ----
   // LIVE SERVER SETTINGS
   // ----
   "liveServer.settings.root": "/dist",
   "liveServer.settings.donotShowInfoMsg": true,
-
   // ----
   // RSP-UI SETTINGS
   // ----
